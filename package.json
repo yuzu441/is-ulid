@@ -1,0 +1,34 @@
+{
+  "name": "@yuzu441/is-ulid",
+  "version": "0.0.1",
+  "description": "The ulid validation of class-validation",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "repository": "ssh://git@github.com/yuzu441/is-ulid.git",
+  "author": "yuzu441",
+  "license": "MIT",
+  "homepage": "https://github.com/yuzu441/is-ulid",
+  "bugs": {
+    "url": "https://github.com/yuzu441/is-ulid/issues"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "keywords": ["validation", "ulid"],
+  "devDependencies": {
+    "@types/rollup-plugin-sourcemaps": "^0.4.2",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "rollup": "^2.10.8",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-terser": "^6.0.1",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "class-validator": "^0.12.2"
+  }
+}

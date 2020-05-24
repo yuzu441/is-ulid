@@ -1,0 +1,8 @@
+src/
+node_modules/
+.prettierrc.js
+rollup.config.js
+tsconnfig.json
+.git/
+.gitignore
+yarn-error.log
