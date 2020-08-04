@@ -1,6 +1,6 @@
 {
   "name": "@yuzu441/is-ulid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The ulid validation of class-validation",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
@@ -16,7 +16,10 @@
     "build": "rollup -c",
     "prepublish": "npm run build"
   },
-  "keywords": ["validation", "ulid"],
+  "keywords": [
+    "validation",
+    "ulid"
+  ],
   "devDependencies": {
     "@types/rollup-plugin-sourcemaps": "^0.4.2",
     "husky": "^4.2.5",
