@@ -1,6 +1,6 @@
 {
   "name": "@yuzu441/is-ulid",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The ulid validation of class-validation",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
