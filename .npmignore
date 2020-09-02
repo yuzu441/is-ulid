@@ -1,8 +1,12 @@
 src/
 node_modules/
-.prettierrc.js
-rollup.config.js
-tsconnfig.json
 .git/
 .gitignore
+.prettierrc.js
+rollup.config.js
+tsconfig.json
 yarn-error.log
+renovate.json
+
+.idea
+.github
