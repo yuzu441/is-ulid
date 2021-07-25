@@ -2,7 +2,7 @@ import {buildMessage, ValidateBy, ValidationOptions} from 'class-validator'
 
 export const IS_ULID = 'isUlid'
 
-const pattern = /[0-9A-Z]{26}/
+const pattern = /[0-9A-HJKMNP-TV-Z]{26}/
 
 export function isULID(value: unknown): boolean {
   return typeof value === 'string' && pattern.test(value)
