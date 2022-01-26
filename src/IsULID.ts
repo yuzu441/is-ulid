@@ -20,5 +20,5 @@ export function IsULID(
         validationOptions
       ),
     },
-  })
+  }, validationOptions)
 }
