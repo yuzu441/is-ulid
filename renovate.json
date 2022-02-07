@@ -1,6 +1,22 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "minor": {
-    "groupName": "all dependencies"
-  }
+  "pin": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "groupName": "patch packages",
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
+      "groupName": "jest",
+      "matchPackagePatterns": ["jest"],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
 }
