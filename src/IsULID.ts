@@ -1,4 +1,4 @@
-import {buildMessage, ValidateBy, ValidationOptions} from 'class-validator'
+import { buildMessage, ValidateBy, ValidationOptions } from 'class-validator'
 
 export const IS_ULID = 'isUlid'
 
@@ -8,17 +8,15 @@ export function isULID(value: unknown): boolean {
   return typeof value === 'string' && pattern.test(value)
 }
 
-export function IsULID(
-  validationOptions?: ValidationOptions
-): PropertyDecorator {
-  return ValidateBy({
-    name: IS_ULID,
-    validator: {
-      validate: (value: string): boolean => isULID(value),
-      defaultMessage: buildMessage(
-        (eachPrefix) => eachPrefix + '$property must be an ULID',
-        validationOptions
-      ),
+export function IsULID(validationOptions?: ValidationOptions): PropertyDecorator {
+  return ValidateBy(
+    {
+      name: IS_ULID,
+      validator: {
+        validate: (value: string): boolean => isULID(value),
+        defaultMessage: buildMessage((eachPrefix) => eachPrefix + '$property must be an ULID', validationOptions),
+      },
     },
-  }, validationOptions)
+    validationOptions,
+  )
 }

@@ -1,4 +1,4 @@
-import {isULID} from './IsULID'
+import { isULID } from './IsULID'
 
 describe('isULID', () => {
   it('validate ulid', () => {
