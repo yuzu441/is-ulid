@@ -1,6 +1,1 @@
-module.exports = {
-  semi: false,
-  singleQuote: true,
-  trailingComma: 'es5',
-  bracketSpacing: false,
-}
+module.exports = require('@yuzu441/prettier-config')

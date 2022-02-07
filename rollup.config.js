@@ -21,10 +21,8 @@ export default {
       file: pkg.module,
       format: 'es',
       sourcemap: 'inline',
-      banner
+      banner,
     },
   ],
-  plugins: [
-    typescript(),
-  ],
+  plugins: [typescript()],
 }

@@ -7,7 +7,7 @@ A library validating [ulid](https://github.com/ulid/spec) with [class-validator]
 ```sh
 npm -S @yuzu441/is-ulid
 
-# or 
+# or
 
 yarn add @yuzu441/is-ulid
 ```
@@ -15,7 +15,7 @@ yarn add @yuzu441/is-ulid
 ## How to use
 
 ```typescript
-import {IsULID} from '@yuzu441/is-ulid'
+import { IsULID } from '@yuzu441/is-ulid'
 class Sample {
   @IsULID()
   id: string
