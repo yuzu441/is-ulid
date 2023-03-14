@@ -1,8 +1,18 @@
+# dir
 src/
+.git/
 node_modules/
+.yarn/
+.github/
+
+# files
 .prettierrc.js
+.prettierignore
 rollup.config.js
 tsconnfig.json
-.git/
 .gitignore
 yarn-error.log
+.yarnrc.yml
+jest.config.js
+renovate.json
+tsconfig.json
