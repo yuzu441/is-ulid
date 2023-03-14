@@ -1,5 +1,5 @@
 import typescript from 'rollup-plugin-typescript2'
-import pkg from './package.json'
+import pkg from './package.json' assert { type: "json" }
 
 const moduleName = pkg.name.replace(/^\@.*\//, '')
 const banner = `/*!
@@ -10,6 +10,7 @@ Released under the ${pkg.license} License.
 
 export default {
   input: './src/index.ts',
+  external: ['class-validator'],
   output: [
     {
       file: pkg.main,
