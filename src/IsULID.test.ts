@@ -1,4 +1,5 @@
-import { isULID } from './IsULID'
+import { validate } from 'class-validator'
+import { IsULID, isULID } from './IsULID'
 
 describe('isULID', () => {
   it('validate ulid', () => {
@@ -24,4 +25,20 @@ describe('isULID', () => {
       expect(isULID('01ED8ABHD21XTZJMRW6ZMEGPSU')).toBeFalsy()
     })
   })
+
+  describe('class validation test', () => {
+    it('valid', async () => {
+      const vt = new ValidationTest('01ED8ABHD21XTZJMRW6ZMEGPSS')
+      await expect(validate(vt)).resolves.toHaveLength(0)
+    })
+  })
 })
+
+class ValidationTest {
+  @IsULID()
+  id: string
+
+  constructor(id: string) {
+    this.id = id
+  }
+}
