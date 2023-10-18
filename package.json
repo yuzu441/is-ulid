@@ -24,7 +24,7 @@
     "ulid"
   ],
   "devDependencies": {
-    "@types/jest": "29.5.5",
+    "@types/jest": "29.5.6",
     "@types/rollup-plugin-sourcemaps": "0.5.0",
     "@yuzu441/prettier-config": "1.2.1",
     "class-validator": "^0.14.0",
