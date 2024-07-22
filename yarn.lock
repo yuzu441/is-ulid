@@ -1417,7 +1417,7 @@ __metadata:
   dependencies:
     "@types/jest": 29.5.12
     "@types/rollup-plugin-sourcemaps": 0.5.0
-    "@yuzu441/prettier-config": 1.2.1
+    "@yuzu441/prettier-config": 1.3.0
     class-validator: ^0.14.0
     husky: 4.3.8
     jest: 29.7.0
@@ -1434,12 +1434,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@yuzu441/prettier-config@npm:1.2.1":
-  version: 1.2.1
-  resolution: "@yuzu441/prettier-config@npm:1.2.1"
+"@yuzu441/prettier-config@npm:1.3.0":
+  version: 1.3.0
+  resolution: "@yuzu441/prettier-config@npm:1.3.0"
   peerDependencies:
-    prettier: ^2.8.1
-  checksum: f867834623458536aeb1d8036331337ece7217b13e9b894fe8506fefe10cd0c0853c3795c68435d3890e901597c2bff87534ab45610d240706ce6a53318db22f
+    prettier: ">2.0.0"
+  checksum: e53a612f415f9662b76a280f1cb6b73c7c5d62b05aa29ca57941ab3407c53e8d633ac8012af03545c8c109457f3e5f9bf9082d1ff2f402799dacf205823f122b
   languageName: node
   linkType: hard
 
